@@ -6,17 +6,15 @@ char	*ft_strdup(char *src)
 	int	length = 0;
 	char	*strcpy;
 
-	while (src[length])
+	while(src[length])
 		length++;
-	strcpy = malloc(sizeof(*strcpy) * (length + 1));
-	if (strcpy != NULL)
-	{
-		while (src[i])
-		{
-			strcpy[i] = src[i];
+	*strcpy=malloc(sizeof(*strcpy)*(length +1);
+	if(strcpy!= NULL){
+		while(src[i]){
+			strcpy[i]=src[i];
 			i++;
 		}
-		strcpy[i] = '\0';
+	strcpy[i]='\0';
 	}
-	return (strcpy);
+	return(strcpy);
 }
