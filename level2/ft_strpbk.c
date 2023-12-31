@@ -11,12 +11,12 @@ char *ft_strpbrk(const char *s1, const char *s2)
 	}
 	while(*s1)
 	{
-		i = 0;
+		cont1 = 0;
 	   	while(s2[cont1])
 		{
 			if(*s1 == s2[cont1])
 				return (char *) s1;
-			cont++;
+			cont1++;
 		}
 		s1++;	
 	}
